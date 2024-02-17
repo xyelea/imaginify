@@ -1,7 +1,13 @@
-import React from "react";
+import { UserButton } from "@clerk/nextjs";
 
-function page() {
-  return <div>page</div>;
+function Home() {
+  return (
+    <div>
+      <p>Home</p>
+
+      <UserButton afterSignOutUrl="/" />
+    </div>
+  );
 }
 
-export default page;
+export default Home;
